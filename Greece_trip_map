@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_77be4dee0b02cca8bc84a1d8293d977d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+            bottom: 50px; left: 50px; width: 270px; height: 120px; 
+            background-color: white; z-index:9999; 
+            padding: 10px; border-radius: 5px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            font-size:14px;">
+    <b>Legend</b><br>
+    <i class="fa fa-home fa-lg" style="color:green"></i> Hotels with Dates<br>
+    <i>Click markers for more details</i>
+</div>
+    
+            <div class="folium-map" id="map_77be4dee0b02cca8bc84a1d8293d977d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_77be4dee0b02cca8bc84a1d8293d977d = L.map(
+                "map_77be4dee0b02cca8bc84a1d8293d977d",
+                {
+                    center: [37.5, 22.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c83794d6bc27e607ff9ca9b2be1ef9f6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var marker_4a518a0eb61a9fe67741e50b8f38abb5 = L.marker(
+                [37.9838, 23.7275],
+                {}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var icon_68fb70c50f139397f0f03b8af70d5555 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4a518a0eb61a9fe67741e50b8f38abb5.setIcon(icon_68fb70c50f139397f0f03b8af70d5555);
+        
+    
+        var popup_1d34053f7f97daf00c3b779599812b29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7c374d2ec7086d54e679386b5257b31 = $(`<div id="html_c7c374d2ec7086d54e679386b5257b31" style="width: 100.0%; height: 100.0%;">March 26 - Kanto's Guesthouse</div>`)[0];
+            popup_1d34053f7f97daf00c3b779599812b29.setContent(html_c7c374d2ec7086d54e679386b5257b31);
+        
+
+        marker_4a518a0eb61a9fe67741e50b8f38abb5.bindPopup(popup_1d34053f7f97daf00c3b779599812b29)
+        ;
+
+        
+    
+    
+            var marker_cfe249a6335696668b5b86fe152fcbc2 = L.marker(
+                [37.5847, 22.0482],
+                {}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var icon_4de20a433d5eeaac84eb6c970f86be80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_cfe249a6335696668b5b86fe152fcbc2.setIcon(icon_4de20a433d5eeaac84eb6c970f86be80);
+        
+    
+        var popup_173914408293591abc0a62313543b5e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f5c82f4d925a71a2ba255cec8b3684b = $(`<div id="html_5f5c82f4d925a71a2ba255cec8b3684b" style="width: 100.0%; height: 100.0%;">March 27 - Amanites Guesthouse Dimitsana</div>`)[0];
+            popup_173914408293591abc0a62313543b5e8.setContent(html_5f5c82f4d925a71a2ba255cec8b3684b);
+        
+
+        marker_cfe249a6335696668b5b86fe152fcbc2.bindPopup(popup_173914408293591abc0a62313543b5e8)
+        ;
+
+        
+    
+    
+            var marker_a40f6803aa909e278d9cd01e3819ea8b = L.marker(
+                [37.65, 22.3333],
+                {}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var icon_3897bb7e321ff8a6bb4a43ade06ee2f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a40f6803aa909e278d9cd01e3819ea8b.setIcon(icon_3897bb7e321ff8a6bb4a43ade06ee2f8);
+        
+    
+        var popup_37d5eaa4282473f5ed9961e0a0ea0289 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_577c1f8a87bfd7f41ad6ce89b651ba05 = $(`<div id="html_577c1f8a87bfd7f41ad6ce89b651ba05" style="width: 100.0%; height: 100.0%;">March 28 - Elati, Greece</div>`)[0];
+            popup_37d5eaa4282473f5ed9961e0a0ea0289.setContent(html_577c1f8a87bfd7f41ad6ce89b651ba05);
+        
+
+        marker_a40f6803aa909e278d9cd01e3819ea8b.bindPopup(popup_37d5eaa4282473f5ed9961e0a0ea0289)
+        ;
+
+        
+    
+    
+            var marker_e5db6ef30007a5ce75a1fb4882b9bc8c = L.marker(
+                [37.6086, 22.135],
+                {}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var icon_a34edec2135c20965e3f12a262e524ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e5db6ef30007a5ce75a1fb4882b9bc8c.setIcon(icon_a34edec2135c20965e3f12a262e524ec);
+        
+    
+        var popup_26db4db358f9b6836a8149a55bf186dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93021a730a8e83b16bd4c2c5d9944a4b = $(`<div id="html_93021a730a8e83b16bd4c2c5d9944a4b" style="width: 100.0%; height: 100.0%;">March 29 - Valtessiniko Studios</div>`)[0];
+            popup_26db4db358f9b6836a8149a55bf186dd.setContent(html_93021a730a8e83b16bd4c2c5d9944a4b);
+        
+
+        marker_e5db6ef30007a5ce75a1fb4882b9bc8c.bindPopup(popup_26db4db358f9b6836a8149a55bf186dd)
+        ;
+
+        
+    
+    
+            var marker_d66739656e4e74b215e53a390423b6b9 = L.marker(
+                [37.5991, 22.1982],
+                {}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var icon_32588b33a3ce985f01e6d00ca7e61954 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d66739656e4e74b215e53a390423b6b9.setIcon(icon_32588b33a3ce985f01e6d00ca7e61954);
+        
+    
+        var popup_8a13cdaaaaf3cdf545b84e3aa7e972b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a16280a4348673f489a618e9a2e3abf5 = $(`<div id="html_a16280a4348673f489a618e9a2e3abf5" style="width: 100.0%; height: 100.0%;">March 30 - Kentrikon Hotel</div>`)[0];
+            popup_8a13cdaaaaf3cdf545b84e3aa7e972b3.setContent(html_a16280a4348673f489a618e9a2e3abf5);
+        
+
+        marker_d66739656e4e74b215e53a390423b6b9.bindPopup(popup_8a13cdaaaaf3cdf545b84e3aa7e972b3)
+        ;
+
+        
+    
+    
+            var marker_3b267792802bd45fbe14ff7e926da3e9 = L.marker(
+                [37.6833, 22.0833],
+                {}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var icon_ead6569be5c546cc699567dab10007aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3b267792802bd45fbe14ff7e926da3e9.setIcon(icon_ead6569be5c546cc699567dab10007aa);
+        
+    
+        var popup_57c408a59a1ef4ae9746d5cdc555d16c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_910509b2b8f4d2123252f09f85936994 = $(`<div id="html_910509b2b8f4d2123252f09f85936994" style="width: 100.0%; height: 100.0%;">March 31 - Lagkadia, Greece</div>`)[0];
+            popup_57c408a59a1ef4ae9746d5cdc555d16c.setContent(html_910509b2b8f4d2123252f09f85936994);
+        
+
+        marker_3b267792802bd45fbe14ff7e926da3e9.bindPopup(popup_57c408a59a1ef4ae9746d5cdc555d16c)
+        ;
+
+        
+    
+    
+            var marker_7386d730f5a872ef010bd63ee5c10a07 = L.marker(
+                [37.9755, 23.7341],
+                {}
+            ).addTo(map_77be4dee0b02cca8bc84a1d8293d977d);
+        
+    
+            var icon_765f2f0705b7c5e1172dc895e50c0235 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7386d730f5a872ef010bd63ee5c10a07.setIcon(icon_765f2f0705b7c5e1172dc895e50c0235);
+        
+    
+        var popup_331271a668f38f0ea8cd8013c8d10c52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f93fee46f1b7860a9ab2b5831f05cef2 = $(`<div id="html_f93fee46f1b7860a9ab2b5831f05cef2" style="width: 100.0%; height: 100.0%;">April 1 - Sweet Home Hotel, Athens</div>`)[0];
+            popup_331271a668f38f0ea8cd8013c8d10c52.setContent(html_f93fee46f1b7860a9ab2b5831f05cef2);
+        
+
+        marker_7386d730f5a872ef010bd63ee5c10a07.bindPopup(popup_331271a668f38f0ea8cd8013c8d10c52)
+        ;
+
+        
+    
+</script>
+</html>
